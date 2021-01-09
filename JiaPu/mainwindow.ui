@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>160</width>
+      <height>302</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="choice">
+     <item>
+      <widget class="QPushButton" name="Create">
+       <property name="text">
+        <string>创建家谱</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Insert">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Delete">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Preorder">
+       <property name="text">
+        <string>遍历</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ave_age">
+       <property name="text">
+        <string>平均年龄</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ave_height">
+       <property name="text">
+        <string>平均身高</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ave_xueli">
+       <property name="text">
+        <string>平均学历</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Search">
+       <property name="text">
+        <string>按名字查找</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Quit">
+       <property name="text">
+        <string>储存</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>0</y>
+      <width>160</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="VerInput">
+     <item>
+      <widget class="QLineEdit" name="InputName"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="InputBPlace"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="InputBDate"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="InputDDate"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="InputGender"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="InputHeight"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="InputJob"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="InputXueli"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Queren">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>0</y>
+      <width>287</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label1">
+       <property name="text">
+        <string>姓名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label2">
+       <property name="text">
+        <string>出生地</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label3">
+       <property name="text">
+        <string>出生日期</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label4">
+       <property name="text">
+        <string>死亡日期（999999健在）</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label5">
+       <property name="text">
+        <string>性别（0男，1女）</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label6">
+       <property name="text">
+        <string>身高</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label7">
+       <property name="text">
+        <string>职业</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label8">
+       <property name="text">
+        <string>学历（0-4表示无到大学）</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label10">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>570</y>
+      <width>391</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>280</y>
+      <width>160</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="edit1"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit3"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit4"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit5"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit6"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit7"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit8"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit9"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit10"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>280</y>
+      <width>287</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="l1">
+       <property name="text">
+        <string>输入一个人的姓名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l2">
+       <property name="text">
+        <string>你和这个人的关系（0父亲，1兄弟）</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l3">
+       <property name="text">
+        <string>姓名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l4">
+       <property name="text">
+        <string>出生地</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l5">
+       <property name="text">
+        <string>出生日期</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l6">
+       <property name="text">
+        <string>死亡日期（999999健在）</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l7">
+       <property name="text">
+        <string>性别（0男，1女）</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l8">
+       <property name="text">
+        <string>身高</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l9">
+       <property name="text">
+        <string>职业</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="l10">
+       <property name="text">
+        <string>学历（0-4表示无到大学）</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>370</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>读取</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="InputSearchName">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>300</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="InputDeleteName">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>450</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tip1">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>330</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>输入搜索名字</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tip2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>480</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>输入删除名字</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>840</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
